@@ -17,6 +17,7 @@ grid-row: 1;
 background-color: black;
 text-align: center;
 color: white;
+padding: 10px;
 }
     
 nav {grid-column: 2;
@@ -42,6 +43,9 @@ color: white;
 background-color: black;
 }
 
+h1 {
+
+}
 
 h2 {text-decoration: underline;}
 
