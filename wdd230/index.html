@@ -12,15 +12,21 @@
     <link rel="stylesheet" href="./styles/base.css" />
   </head>
   <body>
-    <div class="grid-container">
+    <div id="grid-container">
       <header>
-        <img
-          src="/wdd230/images/profile.jpg"
-          alt="profile"
-          width="350"
-          height="300"
-        />
-        <h1>LeRoy Rosen</h1>
+        <div class="header-container">
+          <div class="profilepic">
+            <img
+              src="/wdd230/images/profile.jpg"
+              alt="profile"
+              width="350"
+              height="300"
+            />
+          </div>
+          <div class="name">
+            <h1>LeRoy Rosen</h1>
+          </div>
+        </div>
       </header>
       <nav>
         <a href="#">Home</a>
@@ -38,26 +44,28 @@
         <section class="card">
           <h3>Learning Activities</h3>
           <ul>
-            <li>
-              01:
-              <a
-                href="https://byui-cse.github.io/wdd230-course/lesson01/holygrail-layout.html"
-                >Holy Layout</a
-              >
-              <a
-                href="https://byui-cse.github.io/wdd230-course/lesson01/applied-javascript.html"
-                >JS Pen</a
-              >
-            </li>
-            <li>02:</li>
-            <li>03:</li>
-            <li>04:</li>
-            <li>05:</li>
-            <li>06:</li>
-            <li>07:</li>
-            <li>08:</li>
-            <li>09:</li>
-            <li>10:</li>
+            <div class="learning-activities">
+              <li>
+                01:
+                <a
+                  href="https://byui-cse.github.io/wdd230-course/lesson01/holygrail-layout.html"
+                  >Holy Layout |</a
+                >
+                <a
+                  href="https://byui-cse.github.io/wdd230-course/lesson01/applied-javascript.html"
+                  >JS Pen |</a
+                >
+              </li>
+              <li>02:</li>
+              <li>03:</li>
+              <li>04:</li>
+              <li>05:</li>
+              <li>06:</li>
+              <li>07:</li>
+              <li>08:</li>
+              <li>09:</li>
+              <li>10:</li>
+            </div>
           </ul>
         </section>
         <section class="card">
@@ -67,7 +75,7 @@
         </section>
       </main>
       <footer>
-        <p>&copy;2023, LeRoy Rosen, Utah</p>
+        <p>&copy;<span id="currentYear"></span> LeRoy Rosen, Utah, USA.</p>
         <p>Last Modified:</p>
         <p id="datemodified"></p>
       </footer>
