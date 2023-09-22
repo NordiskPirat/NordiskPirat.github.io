@@ -42,9 +42,4 @@ nav a {
         background-color: black;
 	}
 
-main {
-    display: flex;
-    flex-direction: row;
-    padding: 20px;}    
-
 }
