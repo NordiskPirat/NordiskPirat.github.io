@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* mobile **************************/
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 200px;
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+
+	nav ul {
+		display: flex;
+        
+	}
+	nav ul li {
+		flex: 1 1 100%;
+        background-color: black;
+	}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;}    
+
+}

@@ -22,7 +22,6 @@ background-color: black;
     
 nav {grid-column: 2;
 grid-row: 2;
-width: 200px;
 margin: 0 auto;
 line-height: 1.5;
 font-size: 25px;
@@ -60,11 +59,16 @@ ul {list-style-type: none;}
 
 li {padding-bottom: 10px;}
 
-.card {text-align: center;
+.card1 {text-align: center;
 font-size: 25px;
 color: white;
-
 }
+
+.card2 {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    }
 
 .header-container {
 display: flex;
