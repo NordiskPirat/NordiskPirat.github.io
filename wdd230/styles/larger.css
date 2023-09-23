@@ -18,11 +18,12 @@ h1 {
 
 nav {
 	margin: 0 auto;
-	max-width: 200px;
 }
+
 nav ul {
 	list-style-type: none;
 }
+
 nav a {
 	display: block;
 	text-align: center;
@@ -30,10 +31,15 @@ nav a {
 	text-decoration: none;
 }
 
-main {grid-row: 3;
-grid-column: 2;}
+main {
+	grid-row: 3;
+	grid-column: 2;
+}
 
-main, footer {padding: 20px;}
+main,
+footer {
+	padding: 20px;
+}
 
 /* Larger Views ******************************/
 @media (min-width: 640px) {
@@ -42,20 +48,25 @@ main, footer {padding: 20px;}
 	}
 
 	nav ul li {
-        background-color: black;
+		background-color: black;
 	}
 
-main {
-    padding: 20px;
-    grid-column: 1 / 4;
-}
+	main {
+		padding: 20px;
+		grid-column: 1 / 4;
+	}
 
-main h4{float: right;}
+	main h4 {
+		float: right;
+	}
 
-main h3 {display: flex}
+	main h3 {
+		display: flex
+	}
 
-main h2 {border-style: solid;
-    padding: 20px;
-}
+	main h2 {
+		border-style: solid;
+		padding: 20px;
+	}
 
 }
