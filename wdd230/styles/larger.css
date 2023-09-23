@@ -51,22 +51,14 @@ footer {
 		background-color: black;
 	}
 
-	main {
-		padding: 20px;
-		grid-column: 1 / 4;
-	}
-
-	main h4 {
-		float: right;
-	}
-
-	main h3 {
-		display: flex
-	}
-
 	main h2 {
 		border-style: solid;
 		padding: 20px;
+	}
+
+	.grid-cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 
 }
