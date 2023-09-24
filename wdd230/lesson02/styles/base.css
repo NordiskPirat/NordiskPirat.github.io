@@ -15,7 +15,7 @@ main {
 }
 
 .card {
-    max-width:250px;
+    max-width: 300px;
     border: 4px solid black;
     background-color: lavender;
     color: black;
@@ -40,6 +40,9 @@ img {
     margin-left: auto;
     margin-right: auto; 
 }
+
+a {text-align: center;
+padding: 10px;}
 
 /* medium */
 @media (min-width: 600px) and (max-width: 999px) {
