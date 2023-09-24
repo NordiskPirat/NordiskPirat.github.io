@@ -23,7 +23,8 @@ main {
     padding: 20px;
 }
 
-header, footer {
+header,
+footer {
     background: lavender;
     padding: 10px;
     text-align: center;
@@ -32,30 +33,33 @@ header, footer {
     border: 1px solid black;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
 }
 
 img {
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
-a {text-align: center;
-padding: 10px;}
+a {
+    text-align: center;
+    padding: 10px;
+}
 
 /* medium */
 @media (min-width: 600px) and (max-width: 999px) {
-	main {
-		grid-template-columns: 1fr 1fr;
+    main {
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
-	}
+    }
 }
 
 /* large */
 @media (min-width: 1000px) {
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
-	}
+    }
 }
