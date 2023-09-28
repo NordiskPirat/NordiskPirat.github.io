@@ -110,3 +110,7 @@ a:link {
 a:visited {
     color: white;
 }
+
+nav a::before {
+    content: "➡️";
+}
