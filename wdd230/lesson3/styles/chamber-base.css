@@ -1,0 +1,36 @@
+body {    margin: 0 auto;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;}
+
+    main {
+        grid-template-columns: 1fr;
+        display: grid;
+        gap: 30px;
+        width: 1000px;
+    }
+
+h1 {text-align: center;}
+
+p {
+    display: grid;
+    text-align: left;
+}
+
+header,
+footer {
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.color {
+    background-color: rgb(81, 135, 235);
+    color: yellow;
+}
+
+.typography {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
