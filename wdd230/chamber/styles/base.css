@@ -1,0 +1,14 @@
+body {
+  background-color: #f1ffc8;
+  margin: 0 auto;
+  max-width: fit-content;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 20px;
+}
+
+header,
+footer {
+  text-align: center;
+  background-color: aquamarine;
+}
