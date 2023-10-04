@@ -13,13 +13,24 @@
     <title>Gävle Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="/wdd230/chamber/styles/base.css" />
+    <link rel="stylesheet" href="/wdd230/chamber/styles/larger.css" />
     <link rel="icon" href="/wdd230/chamber/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
       <h1>Gävle</h1>
       <h2>Chamber of Commerce</h2>
-      <nav></nav>
+      <nav>
+        <button id="menu"></button>
+        <ul class="navi">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#" target="_blank">Discover</a>
+          </li>
+          <li><a href="#" target="_blank">Directory</a></li>
+          <li><a href="#" target="_blank">Join</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <img
@@ -28,7 +39,8 @@
         alt="grand hotel"
       />
       <a href="">Join the Chamber</a>
-      <div class="current-events">
+
+      <div class="card">
         <h1>Current Events</h1>
         <p>
           Bacon ipsum dolor amet meatloaf ribeye spare ribs burgdoggen. Capicola
@@ -62,7 +74,7 @@
           belly tri-tip.
         </p>
       </div>
-      <div class="weather">
+      <div class="card">
         <h1>Weather</h1>
         <p>
           Bacon ipsum dolor amet meatloaf ribeye spare ribs burgdoggen. Capicola
@@ -96,7 +108,7 @@
           belly tri-tip.
         </p>
       </div>
-      <div class="spotlight">
+      <div class="card">
         <h1>Spotlight</h1>
         <p>
           Bacon ipsum dolor amet meatloaf ribeye spare ribs burgdoggen. Capicola
@@ -140,6 +152,7 @@
       <p id="dateModified"></p>
       <p></p>
     </footer>
+    <script src="scripts/hamburger.js"></script>
     <script src="scripts/getdates.js"></script>
   </body>
 </html>

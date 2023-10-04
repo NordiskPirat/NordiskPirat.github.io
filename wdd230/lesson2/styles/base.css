@@ -1,65 +1,65 @@
 /* small */
 body {
-    font-family: 'Tenor Sans', sans-serif;
-    background-color: #F1FFC8;
-    margin: 0 auto;
-    max-width: fit-content;
-    display: grid;
-    grid-template-columns: 1fr;
+  font-family: "Tenor Sans", sans-serif;
+  background-color: #f1ffc8;
+  margin: 0 auto;
+  max-width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 main {
-    grid-template-columns: 1fr;
-    display: grid;
-    gap: 30px;
+  grid-template-columns: 1fr;
+  display: grid;
+  gap: 30px;
 }
 
 .card {
-    max-width: 300px;
-    border: 4px solid black;
-    background-color: lavender;
-    color: black;
-    display: grid;
-    padding: 20px;
+  max-width: 300px;
+  border: 4px solid black;
+  background-color: lavender;
+  color: black;
+  display: grid;
+  padding: 20px;
 }
 
 header,
 footer {
-    background: lavender;
-    padding: 10px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 1px solid black;
+  background: lavender;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
 }
 
 h1,
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 img {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 10px;
 }
 
 /* medium */
 @media (min-width: 600px) and (max-width: 999px) {
-    main {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
+  main {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
 }
 
 /* large */
 @media (min-width: 1000px) {
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px;
-    }
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
 }

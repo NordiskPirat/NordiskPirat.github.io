@@ -1,0 +1,19 @@
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+  nav ul {
+    display: flex;
+  }
+
+  .navi {
+    flex-direction: row;
+  }
+
+  .navi li {
+    display: block;
+  }
+
+  /* hide the phone hamburger button */
+  #menu {
+    display: none;
+  }
+}
