@@ -56,7 +56,6 @@ li {
   padding: 10px;
   border: 1px solid black;
   display: grid;
-  max-width: auto;
 }
 
 nav {
