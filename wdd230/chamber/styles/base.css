@@ -115,3 +115,9 @@ nav a {
 .open li a {
   display: block;
 }
+
+/* toggle open close for dark mode */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
