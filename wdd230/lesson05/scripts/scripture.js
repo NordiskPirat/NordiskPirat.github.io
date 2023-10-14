@@ -5,7 +5,7 @@ const button = document.querySelector("button");
 const list = document.querySelector("#list");
 
 button.addEventListener("click", () => {
-  if (input.value != "") {
+  if (input.value == "") {
     alert("Cannot be blank.");
     input.focus();
   } else input.focus();
@@ -16,7 +16,7 @@ button.addEventListener("click", () => {
   li.append(deletebutton);
   list.append(li);
   deletebutton.addEventListener("click", () => {
-    list.removeChild(li);
+    list.removeChild(list.firstChild);
     input.focus();
   });
   input.focus();
