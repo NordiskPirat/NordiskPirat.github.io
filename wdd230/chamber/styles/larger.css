@@ -23,4 +23,12 @@
   #menu {
     display: none;
   }
+
+  #hero {
+    margin-top: 0;
+  }
+
+  #hero-msg {
+    margin-top: 0;
+  }
 }

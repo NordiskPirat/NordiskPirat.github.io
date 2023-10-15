@@ -5,8 +5,9 @@ html {
   margin: 0 auto;
   max-width: fit-content;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   height: 100%;
+  padding: 0;
 }
 
 main {
@@ -36,9 +37,9 @@ ul {
 li {
   padding-bottom: 10px;
 }
+
 #hero {
-  display: grid;
-  margin-top: -100px;
+  margin-top: 0;
 }
 
 #hero-image {
@@ -51,6 +52,7 @@ li {
   background-color: black;
   color: white;
   cursor: pointer;
+  margin-top: 0;
 }
 
 .card {
@@ -122,6 +124,12 @@ nav a {
 
 /* toggle open close for dark mode */
 .dark-mode {
+  background-color: rgb(58, 58, 58);
+}
+
+.dark-mode header,
+footer,
+.dark-mode .card {
   background-color: black;
   color: white;
 }
