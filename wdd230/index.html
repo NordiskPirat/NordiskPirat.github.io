@@ -65,12 +65,25 @@
         </ul>
       </nav>
       <main>
-        <picture
-          ><source
-            media="(min-width: 400px)"
-            srcset="wdd230/images/payson_utah_temple.png"
-            srcset=""
-        /></picture>
+        <div class="hero">
+          <picture
+            ><source
+              srcset="/wdd230/images/payson-utah-temple.webp"
+              media="max-width: 400px" />
+            >
+            <source
+              srcset="/wdd230/images/payson-utah-temple.webp"
+              media="max-width: 960px" />
+            <img
+              src="/wdd230/images/payson-utah-temple.webp"
+              alt="payson utah temple"
+              width="300"
+              height="150"
+          /></picture>
+          <div class="herolabel">
+            <p>Payson Utah Temple</p>
+          </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <div class="grid-cards">
           <section class="card">
