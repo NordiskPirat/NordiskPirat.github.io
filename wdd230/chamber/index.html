@@ -90,6 +90,27 @@
       </div>
       <div class="card">
         <h1>Weather</h1>
+        <div id="weather-section">
+          <label for="temperatureInput">Temperature:</label>
+          <input
+            type="text"
+            id="temperatureInput"
+            placeholder="Enter temperature in °F"
+          />
+
+          <label for="windSpeedInput">Wind Speed:</label>
+          <input
+            type="text"
+            id="windSpeedInput"
+            placeholder="Enter wind speed in mph"
+          />
+
+          <button onclick="calculateAndDisplayWindChill()">
+            Calculate Wind Chill
+          </button>
+
+          <p id="windChill">Wind Chill: N/A</p>
+        </div>
       </div>
       <div class="card">
         <h1>Spotlight</h1>
