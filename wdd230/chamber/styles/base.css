@@ -26,12 +26,17 @@ footer {
   border: 1px solid black;
 }
 
+header img {
+  padding-inline-start: 0px;
+}
+
 h1 {
   font-size: 2rem;
 }
 
 ul {
   list-style-type: none;
+  padding-inline-start: 0px;
 }
 
 li {
@@ -45,22 +50,13 @@ li {
   height: 300px;
 }
 
-#hero-image {
-  width: 100%;
-}
-
-#herolabel {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  border: 1px solid black;
-  padding: 0.5rem;
-}
-
 #herolabel p {
   margin: 0;
-  padding: 0.2rem;
   font-size: 2rem;
+}
+
+#herolabel a {
+  text-decoration: none;
 }
 
 .card {
@@ -85,6 +81,14 @@ nav a {
   text-align: center;
   padding: 1rem;
   text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
 }
 
 #menu {
@@ -139,5 +143,13 @@ nav a {
 footer,
 .dark-mode .card {
   background-color: black;
+  color: white;
+}
+
+.dark-mode a:link {
+  color: white;
+}
+
+.dark-mode a:visited {
   color: white;
 }
