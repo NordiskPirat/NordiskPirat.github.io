@@ -44,7 +44,7 @@ li {
 }
 
 .hero {
-  position: relative;
+  position: absolute;
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 300px;
 }
