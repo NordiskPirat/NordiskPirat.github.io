@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="LeRoy Rosen" />
+    <meta name="description" content="Chamber of Commerce Home Page" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://nordiskpirat.github.io/wdd230/chamber/"
+    />
+    <meta property="og:title" content="Gävle Chamber of Commerce" />
+    <meta property="og:description" content="Gävle Chamber of Commerce" />
+    <meta
+      property="og:image"
+      content="https://cf.bstatic.com/xdata/images/hotel/max1024x768/376838910.jpg?k=e17bf2a3e03dd1696e96d7d395d9f34aa98a04de2c42bfbe1ef89578039fb6a4&o=&hp=1"
+    />
+    <title>Gävle Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="/wdd230/chamber/styles/base.css" />
+    <link rel="stylesheet" href="/wdd230/chamber/styles/larger.css" />
+    <link rel="icon" href="/wdd230/chamber/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="/wdd230/chamber/images/logo.webp"
+        alt="swedish coat of arms"
+        width="100"
+      />
+      <h1>Gävle Chamber of Commerce</h1>
+      <nav>
+        <button id="menu"></button>
+        <ul class="navi">
+          <li><a href="/wdd230/chamber/index.html">Home</a></li>
+          <li>
+            <a href="/wdd230/chamber/discover.html" target="_blank">Discover</a>
+          </li>
+          <li><a href="#" target="_blank">Directory</a></li>
+          <li><a href="#" target="_blank">Join</a></li>
+        </ul>
+      </nav>
+      <p>Page Visits: <span class="visits"></span></p>
+      <p><span class="returnVisit"></span></p>
+      <button onclick="darkMode()">Toggle dark mode</button>
+    </header>
+    <main>
+      <div class="grid-container2">
+        <div class="grid-item">
+          <h1>Demographic</h1>
+          <p>
+            Sweden has a population of over 102,000 people as of 2020, with more
+            growth to come in future years. Gävle is as big as 1,613 km2 and is
+            situated by the Baltic Sea. It has the same latitude as Helsinki and
+            the same longtitude as Vienna and Cape Town. Summers can be really
+            pleasant with 25 degrees celsius, while the winter can be bone
+            biting cold, reaching temperatures as low as -30.
+          </p>
+        </div>
+        <div class="grid-item">
+          <picture
+            ><img
+              class="hover"
+              src="/wdd230/lesson03/images/1.jpg"
+              alt="Sweden 1"
+              loading="lazy"
+              width="400"
+              height="600"
+            />
+          </picture>
+        </div>
+        <div class="grid-item">
+          <picture
+            ><img
+              class="hover"
+              src="/wdd230/lesson03/images/2.jpg"
+              alt="Sweden 2"
+              loading="lazy"
+              width="400"
+              height="600"
+            />
+          </picture>
+        </div>
+        <div class="grid-item">
+          <h1>Events</h1>
+          <p>events here.</p>
+        </div>
+        <div class="grid-item">
+          <picture
+            ><img
+              class="hover"
+              src="/wdd230/lesson03/images/3.jpg"
+              alt="Sweden 3"
+              loading="lazy"
+              width="400"
+              height="600"
+            />
+          </picture>
+        </div>
+        <div class="grid-item">
+          <picture
+            ><img
+              class="hover"
+              src="/wdd230/lesson03/images/4.jpg"
+              alt="Sweden 4"
+              loading="lazy"
+              width="400"
+              height="600"
+            />
+          </picture>
+        </div>
+        <div class="grid-item">
+          <h1>Attractions</h1>
+          <p>attractions here</p>
+        </div>
+        <div class="grid-item">
+          <picture
+            ><img
+              class="hover"
+              src="/wdd230/lesson03/images/5.jpg"
+              alt="Sweden 5"
+              loading="lazy"
+              width="400"
+              height="600"
+            />
+          </picture>
+        </div>
+
+        <div class="grid-item">
+          <picture
+            ><img
+              class="hover"
+              src="/wdd230/lesson03/images/6.jpg"
+              alt="Sweden 6"
+              loading="lazy"
+              width="400"
+              height="600"
+            />
+          </picture>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>ros22007@byui.edu</p>
+      <p>
+        &copy;<span id="currentYear"></span> Gävle Commerce | LeRoy Rosen | WDD
+        230 Project | Last Modified:
+      </p>
+      <p id="dateModified"></p>
+      <p></p>
+    </footer>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/lastvisited.js"></script>
+  </body>
+</html>

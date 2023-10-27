@@ -152,3 +152,20 @@ footer,
 .dark-mode a:visited {
   color: white;
 }
+
+/* Discover Page */
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  width: 100%;
+}
+
+.grid-item {
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 20px;
+  text-align: center;
+  background-color: #f7f492;
+}
