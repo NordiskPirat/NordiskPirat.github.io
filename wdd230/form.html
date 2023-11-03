@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="/wdd230/styles/larger.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="profilepic">
+          <img
+            src="/wdd230/images/profile.webp"
+            alt="profile"
+            width="350"
+            height="300"
+          />
+        </div>
+        <div class="name">
+          <h1>LeRoy Rosen</h1>
+        </div>
+        <nav>
+          <button id="menu"></button>
+          <ul class="navi">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="/wdd230/lesson03/chamber-site-plan.html" target="_blank"
+                >Site Plan</a
+              >
+            </li>
+            <li><a href="chamber/" target="_blank">Chamber</a></li>
+            <li>
+              <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+            </li>
+            <li>
+              <a
+                href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/2?lang=eng&id=p17-p18#p17"
+                target="_blank"
+                >Scripture</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Form</h1>
+      <form method="get" action="record.html">
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <label
+            >Username * <input type="text" id="usern" name="uname" required
+          /></label>
+          <label
+            >Password *
+            <input
+              type="password"
+              id="pwd"
+              name="password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              required
+          /></label>
+          <label
+            >Repeat Password *
+            <input
+              type="password"
+              id="repeatPassword"
+              name="repeatPassword"
+              required
+          /></label>
+          <label
+            >School Email *
+            <input
+              type="email"
+              id="email"
+              name="email"
+              pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+              title="Please enter a valid email address"
+              required
+          /></label>
+          <!-- <label
+            >Rate the Page
+            <input type="range" id="rate" name="rate" min="1" step="1" max="10"
+          /></label> -->
+          <label>
+            <div id="rangevalue">1</div>
+            <input
+              type="range"
+              id="rate"
+              name="rate"
+              min="1"
+              max="10"
+              value="0"
+              step="1"
+              list="rangevalues"
+            />
+            <datalist id="rangevalues">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </datalist>
+            <hr />
+          </label>
+        </fieldset>
+
+        <input
+          type="submit"
+          value="Complete Applicant Form"
+          class="submitBtn"
+        />
+      </form>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentYear"></span> LeRoy Rosen, Utah, USA.</p>
+      <p>Last Modified:</p>
+      <p id="datemodified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/form.js"></script>
+  </body>
+</html>
