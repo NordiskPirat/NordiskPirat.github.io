@@ -169,3 +169,101 @@ footer,
   text-align: center;
   background-color: #f7f492;
 }
+
+/* --------- Join page --------------- */
+:root {
+  --back: #f7f492;
+  --back2: #f7f492;
+  --forelight: black;
+  --borderlight: hsla(0, 0%, 33%, 0.3);
+  --zebra: hsl(0, 0%, 93%, 1);
+}
+
+table {
+  margin: 10px auto;
+  border: thin solid var(--border);
+  box-shadow: 0 0 10px var(--shadow);
+  border-collapse: collapse;
+}
+
+caption {
+  padding: 5px;
+  caption-side: bottom;
+  color: black;
+}
+
+tr:first-child th,
+.highlight {
+  background-color: var(--back);
+  color: var(--forelight);
+}
+
+th,
+td {
+  padding: 7px 15px;
+  border: 1px solid var(--borderlight);
+}
+
+th {
+  background-color: var(--back2);
+  font-size: larger;
+  color: black;
+}
+
+td {
+  text-align: center;
+  font-weight: 700;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--zebra);
+}
+
+/* ------------- form ----------------- */
+:root {
+  --white: black;
+  --border: 1px solid var(--white);
+  --label: black;
+}
+
+h1 {
+  color: var(--white);
+}
+
+form {
+  width: 98%;
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: var(--border);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+legend {
+  color: var(--white);
+}
+
+label {
+  display: block;
+  color: var(--label);
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+input {
+  display: block;
+  font-size: 1rem;
+  border: var(--border);
+  padding: 0.75rem;
+  color: black;
+  font-weight: 700;
+  width: 98%;
+  max-width: 20rem;
+}
+
+input.submitBtn {
+  margin: 0 auto;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="LeRoy Rosen" />
+    <meta name="description" content="Chamber of Commerce Home Page" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://nordiskpirat.github.io/wdd230/chamber/"
+    />
+    <meta property="og:title" content="Gävle Chamber of Commerce" />
+    <meta property="og:description" content="Gävle Chamber of Commerce" />
+    <meta
+      property="og:image"
+      content="https://cf.bstatic.com/xdata/images/hotel/max1024x768/376838910.jpg?k=e17bf2a3e03dd1696e96d7d395d9f34aa98a04de2c42bfbe1ef89578039fb6a4&o=&hp=1"
+    />
+    <title>Gävle Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="/wdd230/chamber/styles/base.css" />
+    <link rel="stylesheet" href="/wdd230/chamber/styles/larger.css" />
+    <link rel="icon" href="/wdd230/chamber/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="/wdd230/chamber/images/logo.webp"
+        alt="swedish coat of arms"
+        width="100"
+      />
+      <h1>Gävle Chamber of Commerce</h1>
+      <nav>
+        <button id="menu"></button>
+        <ul class="navi">
+          <li><a href="/wdd230/chamber/index.html">Home</a></li>
+          <li>
+            <a href="/wdd230/chamber/discover.html" target="_blank">Discover</a>
+          </li>
+          <li><a href="#" target="_blank">Directory</a></li>
+          <li><a href="#" target="_blank">Join</a></li>
+        </ul>
+      </nav>
+      <button onclick="darkMode()">Toggle dark mode</button>
+    </header>
+    <div id="hero">
+      <img
+        id="hero-image"
+        src="/wdd230/chamber/images/grand.webp"
+        alt="grand hotel"
+      />
+      <section id="herolabel">
+        <p><a class="hero-text" href="">Join the Chamber</a></p>
+      </section>
+    </div>
+    <main>
+      <form method="get" action="thankyou.html">
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <label
+            >First Name * <input type="text" id="fname" name="fname" required
+          /></label>
+          <label
+            >Last Name * <input type="text" id="lname" name="lname" required
+          /></label>
+          <label
+            >Position *
+            <input
+              type="text"
+              id="position"
+              name="position"
+              pattern="[a-zA-Z\- ]{7,}"
+              title="Alpha characters, hyphens, and spaces with a minimum of seven characters are only accepted"
+              required
+          /></label>
+          <label
+            >Email *
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required
+          /></label>
+          <label
+            >Phone * <input type="tel" id="phone" name="phone" required
+          /></label>
+          <label
+            >Business Name *
+            <input type="text" id="business" name="business" required
+          /></label>
+        </fieldset>
+
+        <input type="hidden" name="timestamp" id="timestamp" />
+
+        <input
+          type="submit"
+          value="Send In My Membership Application"
+          class="submitBtn"
+        />
+      </form>
+      <fieldset class="benefit">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="5" scope="colgroup">
+                Gävle Chamber of Commerce Membership
+              </th>
+            </tr>
+            <tr>
+              <th scope="col">Level➡️</th>
+              <th scope="col">NP(Non-Profit)</th>
+              <th scope="col">Bronze</th>
+              <th scope="col">Silver</th>
+              <th scope="col">Gold</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Access To Exclusive Forums</td>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>Spot For Business Markets</td>
+              <td>❌</td>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>Featured on Website Spotlight</td>
+              <td>❌</td>
+              <td>❌</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>Discounts Site Wide</td>
+              <td>❌</td>
+              <td>❌</td>
+              <td>❌</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>Full Rights to the Inner Council</td>
+              <td>❌</td>
+              <td>❌</td>
+              <td>❌</td>
+              <td>✔️</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <th>Prices➡️</th>
+            <th>FREE</th>
+            <th>50$</th>
+            <th>80$</th>
+            <th>120$</th>
+          </tfoot>
+        </table>
+        <label>
+          <div id="levelDisplay">Membership Level: Non-Profit</div>
+          <input
+            type="range"
+            min="1"
+            max="4"
+            value="1"
+            class="slider"
+            id="levelSlider"
+          />
+        </label>
+      </fieldset>
+    </main>
+    <footer>
+      <p>ros22007@byui.edu</p>
+      <p>
+        &copy;<span id="currentYear"></span> Gävle Commerce | LeRoy Rosen | WDD
+        230 Project | Last Modified:
+      </p>
+      <p id="dateModified"></p>
+      <p></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/darkmode.js"></script>
+  </body>
+</html>
