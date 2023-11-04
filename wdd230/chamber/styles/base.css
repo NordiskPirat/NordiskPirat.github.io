@@ -267,3 +267,7 @@ input {
 input.submitBtn {
   margin: 0 auto;
 }
+
+#thank {
+  text-align: center;
+}
