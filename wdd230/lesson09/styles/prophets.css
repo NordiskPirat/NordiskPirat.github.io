@@ -1,0 +1,34 @@
+body {
+  text-align: center;
+}
+
+header,
+footer {
+  text-align: center;
+  color: white;
+  background-color: rgb(90, 16, 90);
+}
+
+h1,
+h2,
+p {
+  color: white;
+}
+
+#cards {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: grid;
+}
+
+section {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(90, 16, 90);
+  border: 3px solid white;
+}
+
+section img {
+max-width: 80%;
+height: auto;
+}
