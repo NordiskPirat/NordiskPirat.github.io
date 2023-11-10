@@ -1,0 +1,117 @@
+{
+  "lessons": [
+    {
+      "lesson": "01",
+      "links": [
+        {
+          "url": "/wdd230/lesson1/holygrail.html",
+          "title": "Holy Layout"
+        },
+        {
+          "url": "https://codepen.io/NordiskPirat/pen/MWZvaZR",
+          "title": "JS Pen"
+        }
+      ]
+    },
+    {
+      "lesson": "02",
+      "links": [
+        {
+          "url": "/wdd230/lesson1/media-query.html",
+          "title": "Media Queries"
+        },
+        {
+          "url": "/wdd230/lesson2/design-principles.html",
+          "title": "Design Principles Document"
+        }
+      ]
+    },
+    {
+      "lesson": "03",
+      "links": [
+        {
+          "url": "/wdd230/lesson03/images/combinator.jpg",
+          "title": "Combinator"
+        },
+        {
+          "url": "https://codepen.io/NordiskPirat/pen/RwEypqb",
+          "title": "Pseudo Elements"
+        },
+        {
+          "url": "https://codepen.io/NordiskPirat/pen/MWZGpNV",
+          "title": "Responsive Hamburger"
+        }
+      ]
+    },
+    {
+      "lesson": "04",
+      "links": [
+        {
+          "url": "https://codepen.io/NordiskPirat/pen/qBLMpwV",
+          "title": "Pseudo Classes"
+        }
+      ]
+    },
+    {
+      "lesson": "05",
+      "links": [
+        {
+          "url": "/wdd230/lesson05/bom.html",
+          "title": "Favorite Chapter"
+        }
+      ]
+    },
+    {
+      "lesson": "06",
+      "links": [
+        {
+          "url": "lesson06/images/landscape.webp",
+          "title": "WebP"
+        },
+        {
+          "url": "/wdd230/lesson06/responsive-images.html",
+          "title": "Resp. Img"
+        }
+      ]
+    },
+    {
+      "lesson": "07",
+      "links": [
+        {
+          "url": "lesson03/lazyload.html",
+          "title": "Lazy Load"
+        },
+        {
+          "url": "lesson07/bom.html",
+          "title": "Book of Mormon Chapters"
+        }
+      ]
+    },
+    {
+      "lesson": "08",
+      "links": [
+        {
+          "url": "lesson08/tablebuild.html",
+          "title": "Table Build"
+        },
+        {
+          "url": "form-start/index.html",
+          "title": "Form"
+        }
+      ]
+    },
+    {
+      "lesson": "09",
+      "links": [
+        {
+          "url": "lesson09/new-ward-members.json",
+          "title": "JSON"
+        },
+        {
+          "url": "lesson09/prophets.html",
+          "title": "Prophets"
+        }
+      ]
+    }
+  ]
+}
