@@ -1,7 +1,7 @@
 /* Larger Views ******************************/
 @media (min-width: 600px) {
   main {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
   .card:nth-child(3) {
     grid-column: span 2;
@@ -65,10 +65,109 @@
   .hover:hover {
     box-shadow: 0 0 50px #333;
   }
+
+  /* --------------------------- Dark Mode ---------------------- */
+  .dark-mode body {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .dark-mode .cta {
+    background-color: #555;
+  }
+
+  .dark-mode h1 {
+    color: #fff;
+  }
+
+  .dark-mode #grid {
+    background-color: #555;
+  }
+
+  /* ---------------- Directory ---------------------- */
+  section {
+    padding: 0.5rem;
+    background-color: #f7f492;
+    padding-top: 20px;
+    border: 3px solid black;
+  }
+
+  .grid {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .list img {
+    display: none;
+  }
+
+  .grid img {
+    max-width: 290px;
+    max-height: 170px;
+    height: auto;
+    width: auto;
+  }
+
+  .list .directory:nth-child(even) {
+    background-color: #cdd2ff;
+  }
 }
 
 /* ------------form page ----------- */
 #thank,
 main {
   text-align: center;
+}
+
+/* ------------------------------------------ */
+
+/* Smaller Views (Phones) ******************************/
+@media (max-width: 599px) {
+  main {
+    grid-template-columns: 1fr; /* Set to one column for phones */
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .list img {
+    display: none;
+  }
+
+  section {
+    padding: 0.5rem;
+    background-color: #f7f492;
+    padding-top: 20px;
+    border: 3px solid black;
+  }
+
+  .list .directory:nth-child(even) {
+    background-color: #cdd2ff;
+  }
+
+  .grid img {
+    max-width: 350px;
+    max-height: 250px;
+    height: auto;
+    width: auto;
+  }
 }

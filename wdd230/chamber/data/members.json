@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Nordiska Pirater",
+      "address": "Källbacksvägen 11, Gävle, Sweden",
+      "phone": "+46 (026) 123-4567",
+      "website": "#",
+      "image": "images/hamn.jpg",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Gabbi's Bageri",
+      "address": "Bakvägen 29, Gävle, Sweden",
+      "phone": "+46 (026) 123-4567",
+      "website": "#",
+      "image": "images/bakery.jpg",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "VinZ's IT Konsult",
+      "address": "Itvägen 23, Gävle, Sweden",
+      "phone": "+46 (026) 123-4567",
+      "website": "#",
+      "image": "images/it.png",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Brynäs Hockey",
+      "address": "PuckVägen 52, Gävle, Sweden",
+      "phone": "+46 (026) 123-4567",
+      "website": "#",
+      "image": "images/bif.webp",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Gävle Fotboll",
+      "address": "Bollvägen 1, Gävle, Sweden",
+      "phone": "+46 (026) 123-4567",
+      "website": "#",
+      "image": "images/gif.jpg",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Vikingar I Gävle",
+      "address": "Vikingavägen 90, Gävle, Sweden",
+      "phone": "+46 (026) 123-4567",
+      "website": "#",
+      "image": "images/ship.webp",
+      "membershipLevel": "Bronze"
+    },
+    {
+      "name": "Läkerol",
+      "address": "Godiskällan 44, Gävle, Sweden",
+      "phone": "+46 (026) 123-4567",
+      "website": "#",
+      "image": "images/lakerol.png",
+      "membershipLevel": "Non-Profit"
+    }
+  ]
+}
