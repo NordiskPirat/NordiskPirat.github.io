@@ -8,6 +8,7 @@ html {
   grid-template-rows: 1fr;
   height: 100%;
   padding: 0;
+  margin-top: 0 auto;
 }
 
 main {
@@ -21,7 +22,6 @@ footer {
   text-align: center;
   padding: 10px;
   margin-top: 20px;
-  margin-bottom: 20px;
   background-color: #f7f492;
   border: 1px solid black;
 }
@@ -43,8 +43,18 @@ li {
   padding-bottom: 10px;
 }
 
-.hero {
+#herolabel {
   position: absolute;
+  border: 1px solid black;
+  padding: 0.5rem;
+  background-color: white;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero {
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 300px;
 }
@@ -60,13 +70,13 @@ li {
 
 .card {
   background-color: #f7f492;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid black;
-  display: grid;
+  margin: 0 auto;
+  width: 35rem;
 }
 
 nav {
-  display: flex;
   margin: 0 auto;
   justify-content: space-around;
 }
@@ -91,11 +101,10 @@ a:visited {
 }
 
 #menu {
+  top: 0;
+  right: 0;
   font-size: 1.5rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 3px 7px 6px;
-  top: 1rem;
-  right: 1rem;
 }
 
 #menu::before {
@@ -136,6 +145,26 @@ a:visited {
 /* toggle open close for dark mode */
 .dark-mode {
   background-color: rgb(58, 58, 58);
+}
+
+.dark-mode #herolabel {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode section,
+section label {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.dark-mode .grid-item {
+  background-color: black;
+  color: white;
 }
 
 .dark-mode header,
@@ -248,7 +277,6 @@ legend {
 
 label {
   display: block;
-  color: var(--label);
   padding: 10px;
   font-size: 1.5rem;
 }
@@ -261,7 +289,11 @@ input {
   color: black;
   font-weight: 700;
   width: 98%;
-  max-width: 20rem;
+}
+
+#temperatureInput,
+#windSpeedInput {
+  text-align: center;
 }
 
 input.submitBtn {
