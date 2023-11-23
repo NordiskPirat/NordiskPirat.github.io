@@ -70,10 +70,14 @@ li {
 
 .card {
   background-color: #f7f492;
-  padding: 20px;
+  padding: 25px;
   border: 1px solid black;
   margin: 0 auto;
   width: 35rem;
+}
+
+.card p {
+  padding: 10px;
 }
 
 nav {
