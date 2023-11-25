@@ -23,21 +23,13 @@
     display: block;
   }
 
+  #hero-image {
+    width: 100%;
+  }
+
   /* hide the phone hamburger button */
   #menu {
     display: none;
-  }
-
-  #hero {
-    margin-top: 0;
-  }
-
-  #hero-msg {
-    margin-top: 0;
-  }
-
-  #hero-image {
-    width: 100%;
   }
 
   #temperatureInput,
@@ -146,6 +138,18 @@ main {
 
 #benefit {
   display: flex;
+}
+
+#hero-image {
+  margin-top: 0;
+}
+
+#hero-msg {
+  margin-top: 0;
+}
+
+#hero-image-thank {
+  width: 100%;
 }
 
 /* ------------------------------------------ */
