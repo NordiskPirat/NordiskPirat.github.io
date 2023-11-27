@@ -1,8 +1,8 @@
-const url = "data/members.json";
+const jsonUrl = "data/members.json";
 const cards = document.querySelector("#cards");
 
 async function getInformation() {
-  const response = await fetch(url);
+  const response = await fetch(jsonUrl);
   console.log(response);
   if (response.ok) {
     const data = await response.json();
