@@ -15,13 +15,12 @@ async function getInformation() {
 
 const displayDirectory = (members) => {
   members.forEach((member) => {
-    let card = document.createElement("section");
+    let chamberMemberCard = document.createElement("section");
     let name = document.createElement("h2");
     let p1 = document.createElement("p");
     let p2 = document.createElement("p");
     let p3 = document.createElement("p");
     let p4 = document.createElement("p");
-    let p5 = document.createElement("p");
     let image = document.createElement("img");
 
     image.setAttribute("src", member.image);
@@ -33,30 +32,30 @@ const displayDirectory = (members) => {
     p1.textContent = `${member.address}`;
     p2.textContent = `${member.phone}`;
     p4.textContent = `${member.membershipLevel} Level`;
-    card.appendChild(name);
-    card.appendChild(image);
-    card.appendChild(p1);
-    card.appendChild(p2);
-    card.appendChild(p3);
-    card.appendChild(p4);
+    chamberMemberCard.appendChild(name);
+    chamberMemberCard.appendChild(image);
+    chamberMemberCard.appendChild(p1);
+    chamberMemberCard.appendChild(p2);
+    chamberMemberCard.appendChild(p3);
+    chamberMemberCard.appendChild(p4);
 
-    card.classList.add("directory");
-    cards.append(card);
+    chamberMemberCard.classList.add("directory");
+    cards.append(chamberMemberCard);
   });
 };
 
 getInformation();
 
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
+const grid = document.querySelector("#grid");
+const list = document.querySelector("#list");
 const display = document.querySelector("#cards");
 
-listbutton.addEventListener("click", () => {
+list.addEventListener("click", () => {
   display.classList.add("list");
   display.classList.remove("grid");
 });
 
-gridbutton.addEventListener("click", () => {
+grid.addEventListener("click", () => {
   display.classList.add("grid");
   display.classList.remove("list");
 });

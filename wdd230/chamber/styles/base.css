@@ -331,3 +331,10 @@ input.submitBtn {
   border: 5px solid black;
   font-weight: 700;
 }
+
+/* --------------------------------------------------------------------------------------- */
+#spotlight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
