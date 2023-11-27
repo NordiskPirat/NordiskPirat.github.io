@@ -33,7 +33,6 @@ const displayDirectory = (members) => {
     p1.textContent = `${member.address}`;
     p2.textContent = `${member.phone}`;
     p4.textContent = `${member.membershipLevel} Level`;
-    p5.textContent = `${member.joinedYear}`;
     card.appendChild(name);
     card.appendChild(image);
     card.appendChild(p1);
