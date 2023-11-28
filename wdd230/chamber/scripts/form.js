@@ -22,7 +22,6 @@ slider.oninput = function () {
   levelDisplay.innerHTML = "Membership Level: " + getLevelLabel(this.value);
 };
 
-// -------- Hidden time -------------
 function getCurrentTimestamp() {
   var now = new Date();
   var year = now.getFullYear();

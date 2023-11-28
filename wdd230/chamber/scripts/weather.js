@@ -1,5 +1,5 @@
 const currentTemperature = document.querySelector("#current-temperature");
-const weatherIcon = document.querySelector("#weather-icon");
+const weatherSign = document.querySelector("#weather-sign");
 const captionDescription = document.querySelector("figcaption");
 
 const url =
@@ -27,7 +27,7 @@ function displayResults(data) {
 
   const iconsrc = `https://openweathermap.org/img/w/${item.weather[i].icon}.png`;
   let desc = item.weather[i].description;
-  weatherIcon.setAttribute("src", iconsrc);
+  weatherSign.setAttribute("src", iconsrc);
   captionDescription.innerHTML = `${desc}`;
   i = i + 8;
   while (i < 25) {

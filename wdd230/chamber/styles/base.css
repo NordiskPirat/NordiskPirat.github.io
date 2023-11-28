@@ -308,13 +308,13 @@ input.submitBtn {
 }
 
 /* ---------------- Banner Front Page ---------------------- */
-#hide {
+#remove {
   font-size: 5rem;
   float: right;
   cursor: pointer;
 }
 
-.banner {
+.frontbanner {
   display: none;
   position: fixed;
   left: 0;
@@ -323,7 +323,7 @@ input.submitBtn {
   width: 100%;
 }
 
-.banner-content {
+.frontbanner-content {
   background-color: rgb(14, 62, 194);
   color: white;
   margin: 20% auto;

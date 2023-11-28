@@ -44,9 +44,9 @@
         </ul>
       </nav>
       <button onclick="darkMode()">Toggle dark mode</button>
-      <div id="banner" class="banner">
-        <div class="banner-content">
-          <span id="hide">&times;</span>
+      <div id="frontbanner" class="frontbanner">
+        <div class="frontbanner-content">
+          <span id="remove">&times;</span>
           <h2>Come Join Us!</h2>
           Every Wednesday we'll have a formal meeting discussing plans and the
           future! The meeting starts at 7pm-8pm. Don't be late!
@@ -117,33 +117,13 @@
             <h2>Current Weather</h2>
             <p>Today's Temperature: <span id="current-temperature"></span></p>
             <figure>
-              <img id="weather-icon" src="" alt="" />
+              <img id="weather-sign" src="" alt="" />
               <figcaption></figcaption>
             </figure>
 
             <h3>3 Day Forecast</h3>
             <article id="weatherForecast"></article>
           </section>
-
-          <label for="temperatureInput">Temperature:</label>
-          <input
-            type="text"
-            id="temperatureInput"
-            placeholder="Enter temperature in °F"
-          />
-
-          <label for="windSpeedInput">Wind Speed:</label>
-          <input
-            type="text"
-            id="windSpeedInput"
-            placeholder="Enter wind speed in mph"
-          />
-
-          <button onclick="calculateAndDisplayWindChill()">
-            Calculate Wind Chill
-          </button>
-
-          <p id="windChill">Wind Chill: N/A</p>
         </div>
       </div>
     </main>

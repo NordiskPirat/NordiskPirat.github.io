@@ -1,11 +1,12 @@
-const banner = document.querySelector("#banner");
-const span = document.querySelector("#hide");
+const frontbanner = document.querySelector("#frontbanner");
+const span = document.querySelector("#remove");
+
+span.onclick = function () {
+  frontbanner.style.display = "none";
+};
 
 const date = new Date();
 let day = date.getDay();
 if (day > 0 && day < 4) {
-  banner.style.display = "block";
+  frontbanner.style.display = "block";
 }
-span.onclick = function () {
-  banner.style.display = "none";
-};
