@@ -1,7 +1,7 @@
 :root {
   --black: black;
-  --border: 1px solid var(--white);
-  --label: white;
+  --border: 1px solid var(--black);
+  --label: black;
 }
 
 h1 {
