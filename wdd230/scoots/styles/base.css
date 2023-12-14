@@ -34,7 +34,8 @@ main {
 }
 
 #herolabel {
-  position: absolute;
+  width: 8rem;
+  position: sticky;
   border: 1px solid black;
   padding: 0.5rem;
   background-color: white;
@@ -44,7 +45,7 @@ main {
   transform: translate(-50%, -50%);
 }
 
-#herolabel p {
+#herolabel h2 {
   margin: 0;
   font-size: 2rem;
 }
