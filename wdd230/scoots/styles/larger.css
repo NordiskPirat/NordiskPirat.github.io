@@ -1,0 +1,27 @@
+/* Styles for smaller screens (phones) */
+@media screen and (max-width: 599px) {
+  .home-grid,
+  .rental-card,
+  .reservation-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  .home-card,
+  .weather-card,
+  .rental-card,
+  .agree-card,
+  .form-card,
+  .contact-card,
+  .question-card,
+  .map1-card,
+  .map2-card {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}

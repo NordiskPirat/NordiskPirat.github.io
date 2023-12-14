@@ -1,5 +1,10 @@
 html {
   background-color: #eae7dc;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* ------------------------- Home Page ------------------------------- */
@@ -13,11 +18,15 @@ html {
 .home-card {
   grid-row: 1;
   grid-column: 2;
+  background-color: #dcdfea;
+  border: 3px solid black;
 }
 
 .weather-card {
   grid-row: 1;
   grid-column: 3;
+  background-color: #dcdfea;
+  border: 3px solid black;
 }
 
 main {
@@ -90,10 +99,20 @@ a:hover {
 
 /* ---------------------------- Rentals Page ----------------------------- */
 
-.rental-card {
+.rental-grid {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   display: grid;
+}
+
+.rental-card {
+  text-align: center;
+  grid-row: 2;
+  grid-column: 2;
+  display: grid;
+  background-color: #dcdfea;
+  border: 3px solid black;
+  padding: 20px;
 }
 
 /* --------------------------------- Reservations Page -------------------------------- */
@@ -106,14 +125,18 @@ a:hover {
 .agree-card {
   grid-row: 1;
   grid-column: 2;
+  background-color: #dcdfea;
+  padding: 20px;
+  border: 3px solid black;
 }
 
 .form-card {
-  background-color: white;
+  background-color: #dcdfea;
   grid-row: 1;
   grid-column: 3;
   width: 50rem;
   padding: 20px;
+  border: 3px solid black;
 }
 
 form {
@@ -133,7 +156,7 @@ form {
 }
 
 .contact-card {
-  background-color: #e85a4f;
+  background-color: #dcdfea;
   grid-row: 1;
   grid-column: 2;
   padding: 20px;
@@ -141,7 +164,7 @@ form {
 }
 
 .question-card {
-  background-color: #e85a4f;
+  background-color: #dcdfea;
   grid-row: 1;
   grid-column: 3;
   padding: 20px;
